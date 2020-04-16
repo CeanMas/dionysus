@@ -1,0 +1,467 @@
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('./assets/fonts/OpenSans-Light.ttf');
+}
+
+* {
+    font-family: "Open Sans";
+}
+
+
+ion-tabs, ion-tab-bar{
+    color: var(--ion-color-grisOscuro) !important;
+    --ion-color-base: var(--ion-color-grisOscuro) !important;
+}
+
+ion-tab-button.tab-selected {
+    ion-icon, ion-label {
+      color: var(--ion-color-orange) !important;
+      --ion-color-base: var(--ion-color-orange) !important;
+    }
+}
+
+ion-tab-button {
+    ion-icon, ion-label {
+      color: var(--ion-color-white) !important;
+      --ion-color-base: var(--ion-color-white) !important;
+    }
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+
+.logo-icon {
+    width: 115px;
+    height: 40px;
+    position: relative;
+    left: 30px;
+    top: 8px;
+}
+
+.cart-icon {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    left: 90px;
+    top: 8px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 105px;
+    top: 8px;
+}
+
+#upper-section {
+    width: 100vw;
+    height: 310px;
+    background-image: url("./assets/img/bck_slider.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#tabs-upper-section {
+    width: 100vw;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background-color: #1B1E21;
+}
+
+.opacity {
+    width: 100vw;
+    height: calc(50vh - 50px);
+    opacity: 0.4;
+    background-color: #000;
+}
+
+.icons-middle {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.search-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 14vw;
+}
+
+.opcs-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.upper-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(50vh - 50px);
+}
+
+.title-upper {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    font-family: "OpenSans-Light";
+}
+
+.text-upper {
+    font-size: 14px;
+    color: white;
+    width: 75vw;
+    margin-left: 12.5vw;
+    text-align: center;
+    font-family: "OpenSans-Light";
+}
+
+.details-upper {
+    position: absolute;
+    top: 50%;
+    left: 28.4vw;
+    width: 43.2%;
+}
+
+.card {
+    width: 90vw;
+    height: 500px;
+    margin-top: 5vh;
+    position: relative;
+    background-color:white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    left: 5vw;
+}
+
+.card-opacity {
+    width: 100%;
+    height: 206px;
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-card {
+    width: 100%;
+    height: 212px;
+    background-image: url("./assets/img/bck_slider.png");
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.orange-rectangle {
+    width: 40px;
+    height: 206px;
+    background-color: #e81702;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+}
+
+.text-orange-rectangle {
+    position: relative;
+    top: 4%;
+    left: -82px;
+    width: 206px;
+    letter-spacing: 1px;
+    transform: rotate(-90deg);
+    color: white;
+}
+
+.diagonal {
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 0;
+    right: .5px;
+}
+
+.text-diagonal {
+    position: relative;
+    top: 8.5%;
+    left: 83.5%;
+    width: 206px;
+    letter-spacing: 1px;
+    transform: rotate(45deg);
+    color: white;
+}
+
+.wine {
+    width: 28%;
+    height: 327px;
+    position: absolute;
+    left: 3%;
+    top: 12%;
+}
+
+.sticker {
+    width: 58px;
+    height: 86px;
+    background-image: url('./assets/img/sticker.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    top: 38.1%;
+    left: 9.3%;
+}
+
+.img-content {
+    width: 100%;
+    height: 206px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-content h2 {
+    width: 50%;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    margin-left: 32%;
+}
+
+.img-content p {
+    width: 50%;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    margin-left: 32%;
+    margin-top: -5px;
+}
+
+.img-content h3 {
+    width: 50%;
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 28px;
+    margin-left: 35%;
+    margin-top: 2px;
+}
+
+.best-price {
+    width: 200px;
+    height: 46px;
+    background-image: url('./assets/img/best_price.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    top: -5px;
+    left: calc((100% - 42px)/3 + 10px);
+}
+
+.best-price p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    top: 30%;
+    left: -27%;
+}
+
+.best-price h2 {
+    width: 40%;
+    font-size: 12px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    position: relative;
+    top: -37%;
+    left: 30%;
+}
+
+.ribbon {
+    width: 31px;
+    height: 36px;
+    position: absolute;
+    right: 10px;
+    top: 94%;
+    background-image: url('./assets/icon/ribbon_colored.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.img-content-bottom {
+    width: 100%;
+    height: calc(100% - 206px);
+    position: absolute;
+    bottom: 0;
+}
+
+.stars-container {
+    margin-top: 5px;
+    margin-left: 32%;
+}
+
+.stars {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.container-info {
+    margin-left: calc(32% + 5px);
+}
+
+.container-info ion-icon, .container-info p{
+    display: inline-block;
+}
+
+.container-info ion-icon {
+    font-size: 24px;
+}
+
+.container-info p {
+    color: #E81702;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    top: -4px;
+    left: 5px;
+}
+
+.container-info-2 {
+    display: inline-block;
+    width: 30%;
+    margin-left: -15px;
+    
+}
+
+.container-info-2 ion-icon, .container-info-2 p {
+    display: inline-block;
+}
+
+.container-of-containers-of-info {
+    position: relative;
+    left: 37%;
+}
+
+.bottom-functions {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.add-to-cart {
+    width: 55%;
+    height: 60px;
+    background-color: #e81702;
+    border-radius: 100px;
+    position: absolute;
+    left: 21%;
+    bottom: 10px;
+}
+
+.add-to-cart p {
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 24px;
+    margin-top: 2px;
+}
+
+.amount-of-bottles {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+}
+
+.number_amount {
+    font-size: 26px;
+    color: #333;
+    position: relative;
+    top: -14px;
+    left: 8px;
+}
+
+.arrows_amount_up {
+    position: absolute;
+    top: -5%;
+    left: 60%;
+    font-size: 16px;
+}
+
+.arrows_amount_down {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    font-size: 16px;
+}
+
+.mark-as-fav {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+}
+
+.mark-as-fav ion-icon {
+    font-size: 24px;
+    margin-left: 17px;
+    margin-top: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

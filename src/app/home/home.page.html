@@ -1,0 +1,125 @@
+<ion-header>
+  <ion-toolbar style="height: 60px !important;" color="gris">
+    <img class="menu-icon" src="../../assets/img/menu.png">
+    <img class="logo-icon" src="../../assets/img/logo.jpg">
+    <img class="cart-icon" src="../../assets/img/cart.png">
+    <img class="profile-icon" src="../../assets/img/user.png">
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="upper-section">
+
+    <div class="opacity"></div>
+
+    
+    <div class="upper-text-container">
+      <h2 class="title-upper">Lorem Ipsum Dolor</h2>
+      <p class="text-upper">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, setempor incididunt ut labore et dolore magna aliqua.
+      </p>
+
+      <img class="details-upper" src="../../assets/img/detail.png">
+    </div>
+
+    <div id="tabs-upper-section">
+      <div>
+        <h2 style="color: white; font-size: 14px; position: absolute; left: 10vw;">TOP SELLERS</h2>
+        <ion-icon class="icons-middle" src="../../assets/icon/undo.svg"></ion-icon>
+      </div>
+      <div style="position: absolute; top: 0; left: 30vw;">
+        <h2 style="color: white; font-size: 14px; position: absolute; left: 10vw;">AWARDED</h2>
+        <ion-icon class="icons-middle" src="../../assets/icon/ribbon.svg"></ion-icon>
+      </div>
+      <div style="position: absolute; top: 0; left: 56vw;">
+        <h2 style="color: white; font-size: 14px; position: absolute; left: 10vw;">NEW</h2>
+        <ion-icon class="icons-middle" src="../../assets/icon/new.svg"></ion-icon>
+      </div>
+      <img class="search-icon" src="../../assets/img/search.png">
+      <img class="opcs-icon" src="../../assets/img/opcs.png">
+    </div>
+  </div>
+
+  <div *ngFor="let product of products" class="card">
+    <div>
+      <div class="img-card"></div>
+      <div class="card-opacity"></div>
+      <div class="orange-rectangle"></div>
+      <p class="text-orange-rectangle">Vin de Colectie</p>
+      <ion-icon src="../../assets/icon/diagonal.svg" class="diagonal"></ion-icon>
+      <p class="text-diagonal">New</p>
+      <div class="img-content">
+        <h2>Davino Monogram Feteasca Alba 2018</h2>
+        <p>Davino Monogram</p>
+        <div class="best-price">
+          <p>-25%</p>
+          <h2><s> 2.272°° Lei</s></h2>
+        </div>
+        <h3>2.272°° Lei</h3>
+        <div class="ribbon"></div>
+      </div>
+      <img class="wine" src="../../assets/img/wine.png">
+      <div class="sticker"></div>
+    </div>
+    <div class="img-content-bottom">
+      <div class="stars-container">
+        <ion-icon src="../../assets/icon/star.svg" class="stars"></ion-icon>
+        <ion-icon src="../../assets/icon/star.svg" class="stars"></ion-icon>
+        <ion-icon src="../../assets/icon/star.svg" class="stars"></ion-icon>
+        <ion-icon src="../../assets/icon/star.svg" class="stars"></ion-icon>
+        <ion-icon src="../../assets/icon/star.svg" class="stars"></ion-icon>
+      </div>
+      <div class="container-info">
+        <ion-icon src="../../assets/icon/undo.svg"></ion-icon>
+        <p>89% Would buy again</p>
+      </div>
+      <div style="margin-top: -15px;" class="container-info">
+        <ion-icon src="../../assets/icon/location.svg"></ion-icon>
+        <p style="font-weight: normal; color: #333;">Romanía, Banat</p>
+      </div>
+
+      <div class="container-of-containers-of-info">
+        <div style="margin-top: -15px;" class="container-info-2">
+          <ion-icon style="font-size: 24px;" src="../../assets/icon/wine_glass.svg"></ion-icon>
+          <p style="font-weight: normal; color: #333;">Rosu</p>
+        </div>
+        <div style="margin-top: -15px; margin-left: -40px;" class="container-info-2">
+          <ion-icon style="font-size: 24px;" src="../../assets/icon/thermometer.svg"></ion-icon>
+          <p style="font-weight: normal; color: #333;">13.5% alc.</p>
+        </div>
+        <div style="margin-top: -15px;" class="container-info-2">
+          <ion-icon style="font-size: 24px;" src="../../assets/icon/wine_bottle.svg"></ion-icon>
+          <p style="font-weight: normal; color: #333;">0,7 L</p>
+        </div>
+      </div>
+
+      <div style="margin-top: -15px;" class="container-info">
+        <ion-icon src="../../assets/icon/grapes.svg"></ion-icon>
+        <p style="font-weight: normal; color: #333;">Cabernet Blend</p>
+      </div>
+    </div>
+
+    <div class="bottom-functions">
+      <div class="amount-of-bottles">
+        <p class="number_amount">1 </p>
+        <p class="arrows_amount_up">▲</p>
+        <p class="arrows_amount_down">▼</p>
+      </div>
+      <div class="add-to-cart">
+        <p>Add to cart
+          <mark 
+            style="background: transparent; font-size: 34px; color: white; position: relative; top: 3px; left: 15px;"
+            >
+            →
+          </mark>
+        </p>
+      </div>
+      <div class="mark-as-fav">
+         <ion-icon src="../../assets/icon/heart.svg"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  
+</ion-content>
